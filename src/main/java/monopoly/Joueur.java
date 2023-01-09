@@ -1,4 +1,4 @@
-package net.guillaume.teaching.refactoring.monopoly;
+package monopoly;
 
 import java.util.ArrayList;
 
@@ -179,7 +179,7 @@ public class Joueur implements Comparable {
         }
     }
 
-    public void acheterCase(CaseConstructible c,ArrayList<CaseConstructible> listecase) {
+    public void acheterCase(CaseConstructible c, ArrayList<CaseConstructible> listecase) {
         if (c.getCoutAchat() < argent && listecase.contains(c)) {  // si le joueur a argent et si la case est libre
             argent = argent - c.getCoutAchat();
             listecase.remove(c);    // enleve la case de la liste des cases libres
@@ -190,7 +190,7 @@ public class Joueur implements Comparable {
     }
 
 
-    public void payerLoyer(CaseConstructible c,ArrayList<CaseConstructible> listecase, ArrayList<Joueur> j) {
+    public void payerLoyer(CaseConstructible c, ArrayList<CaseConstructible> listecase, ArrayList<Joueur> j) {
         if (!listecase.contains(c) && !casespossedes.contains(c)) {   //si la case a un propritaire et que ce n est pas le joueur
             if(c.getCouleur()=="gare") {   // traitement du cas particulier de la gare
                 int montantloyer=0;

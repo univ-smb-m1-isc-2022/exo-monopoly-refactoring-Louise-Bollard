@@ -1,6 +1,8 @@
-package net.guillaume.teaching.refactoring.monopoly;
+package monopoly;
 
-public class CaseConstructible extends Case{
+import monopoly.Case;
+
+public class CaseConstructible extends Case {
 
     private final int coutAchat;
     private final int loyer;

@@ -1,41 +1,40 @@
-package net.guillaume.teaching.refactoring.monopoly;
+package monopoly;
 
 import java.util.ArrayList;
 
 public class Plateau {
 
-
     public Case depart;
-    public  CaseConstructible bellevile;
-    public  CaseConstructible lecourbe;
-    public  CaseConstructible vaugirard;
-    public  CaseConstructible courcelles;
-    public  CaseConstructible republique;
-    public  CaseConstructible neuilly;
-    public  CaseConstructible villette;
-    public  CaseConstructible paradis;
-    public  CaseConstructible mozart;
-    public  CaseConstructible stmichel;
-    public  CaseConstructible pigalle;
-    public  CaseConstructible malesherbes;
-    public  CaseConstructible matignon;
-    public  CaseConstructible henrimartin;
-    public  CaseConstructible bourse;
-    public  CaseConstructible sthonore;
-    public  CaseConstructible fayette;
-    public  CaseConstructible foch;
-    public  CaseConstructible breteuil;
-    public  CaseConstructible capucines;
-    public  CaseConstructible champs;
-    public  CaseConstructible paix;
-    public  CaseSpeciale luxe;
-    public  CaseSpeciale impot;
-    public  CaseSpeciale prison;
-    public  CaseSpeciale allerenprison;
-    public  CaseConstructible garemontparnasse;
-    public  CaseConstructible garedelyon;
-    public  CaseConstructible garedunord;
-    public  CaseConstructible garesaintlazard;
+    public CaseConstructible bellevile;
+    public CaseConstructible lecourbe;
+    public CaseConstructible vaugirard;
+    public CaseConstructible courcelles;
+    public CaseConstructible republique;
+    public CaseConstructible neuilly;
+    public CaseConstructible villette;
+    public CaseConstructible paradis;
+    public CaseConstructible mozart;
+    public CaseConstructible stmichel;
+    public CaseConstructible pigalle;
+    public CaseConstructible malesherbes;
+    public CaseConstructible matignon;
+    public CaseConstructible henrimartin;
+    public CaseConstructible bourse;
+    public CaseConstructible sthonore;
+    public CaseConstructible fayette;
+    public CaseConstructible foch;
+    public CaseConstructible breteuil;
+    public CaseConstructible capucines;
+    public CaseConstructible champs;
+    public CaseConstructible paix;
+    public CaseSpeciale luxe;
+    public CaseSpeciale impot;
+    public CaseSpeciale prison;
+    public CaseSpeciale allerenprison;
+    public CaseConstructible garemontparnasse;
+    public CaseConstructible garedelyon;
+    public CaseConstructible garedunord;
+    public CaseConstructible garesaintlazard;
     private ArrayList<CaseConstructible> caseSansProprietaire = new ArrayList<>();
 
     public Plateau(){
@@ -52,7 +51,7 @@ public class Plateau {
     bellevile = new CaseConstructible("Boulevard de Bellevile", 20, 2,"v");
     lecourbe = new CaseConstructible("Rue Lecourbe", 40, 4, "v");
     vaugirard = new CaseConstructible("Rue Vaugirard", 60, 6,"b");
-    courcelles = new CaseConstructible("Rue De Courcelles", 60, 6,"b");
+    courcelles = new CaseConstructible("Rue monopoly.De Courcelles", 60, 6,"b");
     republique = new CaseConstructible("Avenue de la Republique", 80, 8,"b");
     neuilly = new CaseConstructible("Avenue de Neuilly", 100, 10,"p");
     villette = new CaseConstructible("Boulevard de la Villette", 100, 10,"p");
@@ -75,7 +74,7 @@ public class Plateau {
     luxe = new CaseSpeciale("Taxe de Luxe");
     prison = new CaseSpeciale("Prison");
     allerenprison = new CaseSpeciale("Aller en Prison");
-    garedelyon = new CaseConstructible("Gare De Lyon",120,25,"gare");
+    garedelyon = new CaseConstructible("Gare monopoly.De Lyon",120,25,"gare");
     garemontparnasse = new CaseConstructible("Gare Mont-Parnasse",120,25,"gare");
     garedunord = new CaseConstructible("Gare Du Nord",120,25,"gare");
     garesaintlazard = new CaseConstructible("Gare Saint-Lazar",120,25,"gare");
